@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+main {
+    min-height: 100vh;
+    position: relative;
+}
+
+main.content {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main h1{
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    user-select: none;
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 0.5s;
+    z-index: 1;
+    font-family: "TikTok Sans";
+    font-weight: bold;
+    font-size: 80px;
+}
+
+.footer {
+    z-index: 2;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 1s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate(-15px, 15px)
+    }
+    to {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
