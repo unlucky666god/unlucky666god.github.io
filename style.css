@@ -5,6 +5,23 @@
   padding: 0;
   box-sizing: border-box;
   z-index: 1;
+  list-style: none;
+  text-decoration: none;
+}
+
+nav li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+nav a {
+    font-family: "TikTok Sans";
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    user-select: none;
 }
 
 main {
@@ -52,5 +69,18 @@ main h1{
     to {
         opacity: 1;
         transform: translate(0px, 0px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main h1 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    main h1 {
+        font-size: 30px;
+        padding-bottom: 30px;
     }
 }
