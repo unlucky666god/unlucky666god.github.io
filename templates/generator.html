@@ -11,25 +11,24 @@
     <meta property="og:image" content="background.png">
     <meta property="og:description" content="Team's generator for play">
     <meta property="og:site_name" content="Team's generator">
-    <title>Are we going to play today?</title>
-    <link rel="stylesheet" href="/css/style.css">
     <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/generator.css">
+    <title>Генератор команд</title>
 </head>
 
 <body>
-    <main style="background-image: url('/img/bg.png');" class="content">
-        <nav>
-            <li>
-                <ul><a href="index.html">Main</a></ul>
-                <ul><a href="generator.html">Team's generator</a></ul>
-            </li>
-        </nav>
-        <h1>Сегодня в 19:00</h1>
-        <div class="footer">
-            <div class="creator">⚡️ Created by unlucky666root ⚡️</div>
-            <div class="copy">ⓒ All rights reserved. 2025</div>
-        </div>
-    </main>
+
+    <h1>Генератор команд</h1>
+
+    <textarea id="playerInput" placeholder="Введите имена игроков, каждое с новой строки..."></textarea>
+    <button onclick="generateTeams()">🎲 Сгенерировать команды 🎲</button>
+
+    <div id="teamsOutput"></div>
+
+    <button onclick="comeback()">🔙 Вернуться на главную </button>
+
+    <script src="/JS/generator.js"></script>
+
 </body>
 
 </html>
