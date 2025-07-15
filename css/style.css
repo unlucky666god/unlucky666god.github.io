@@ -85,7 +85,6 @@ main h1{
 
 @media screen and (max-width: 468px) {
     main h1 {
-        font-size: 45px;
         padding-bottom: 30px;
     }
 }
