@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "TikTok sans";
+}
+
+body {
+    margin: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    text-shadow: 5px -5px 10px rgba(0, 0, 0, 0.3);
+    user-select: none;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.5);
+    user-select: none;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.5);
+    transition: all .3s ease;
+    user-select: none;
+}
+
+button:hover {
+    background-color: #c5c5c5;
+    transform: scale(1.1);
+    box-shadow: 10px -10px 20px rgba(0, 0, 0, 0.5);
+}
+
+button:active {
+    background-color: #9e9e9e;
+    transform: scale(0.9);
+    box-shadow: 2px -2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.team {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+}
+
+.team h3 {
+    margin-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        text-align: center;
+    }
+
+    button {
+        padding: 20px 20px;
+        width: 100%;
+        font-size: 20px;
+        border-radius: 8px;
+        box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.5);
+        transition: all .3s ease;
+    }
+
+    button:hover {
+        background-color: #c5c5c5;
+        transform: scale(1.1);
+        box-shadow: 10px -10px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    button:active {
+        background-color: #9e9e9e;
+        transform: scale(0.9);
+        box-shadow: 2px -2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    textarea {
+        height: 50vh;
+    }
+}
