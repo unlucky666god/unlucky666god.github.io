@@ -1,0 +1,121 @@
+/* === Общие стили === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'TikTok Sans', sans-serif;
+    user-select: none;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffe6f0, #f0c0e0);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px 40px;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #d63384;
+    text-shadow: 1px 1px 3px rgba(255, 0, 100, 0.2);
+}
+
+/* === Навигация === */
+nav ul {
+    display: flex;
+    gap: 20px;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+nav ul li a {
+    color: #888;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #d63384;
+}
+
+/* === Легенда === */
+.legend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.legend .item {
+    background: white;
+    padding: 10px 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.2s ease;
+}
+
+.legend .item:hover {
+    transform: scale(1.05);
+}
+
+.legend .heart {
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+.legend .strong { color: #ff3b6e; }
+.legend .medium { color: #ffcc00; }
+.legend .weak { color: #9d4edd; }
+.legend .spark { color: #fff; text-shadow: 0 0 5px #aaa; }
+.legend .broken { color: #6c757d; }
+
+/* === Пары === */
+.pair-list {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pair-card {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 1.3rem;
+    color: #d63384;
+    transition: transform 0.2s ease;
+}
+
+.pair-card:hover {
+    transform: translateY(-5px);
+}
+
+/* === Футер === */
+footer {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #aaa;
+    text-align: center;
+}
