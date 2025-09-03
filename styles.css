@@ -183,6 +183,7 @@ nav ul li a:hover {
     height: 100%;
     background: linear-gradient(rgba(26, 58, 108, 0.85), rgba(26, 58, 108, 0.9));
     z-index: 1;
+    user-select: none;
 }
 
 .hero-image {
@@ -237,6 +238,7 @@ nav ul li a:hover {
 .hero .btn {
     animation: fadeIn 1s ease-in-out 1.1s forwards;
     opacity: 0;
+    user-select: none;
 }
 
 @keyframes fadeIn {
